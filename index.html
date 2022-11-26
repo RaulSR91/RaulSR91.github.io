@@ -29,7 +29,6 @@
                 console.log("SW Registered")
                 serviceWorkerRegistration = reg;
             })
-
     </script>
 
 </head>
@@ -38,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container d-flex justify-content-between">
 
-            <div id="logo">
+            <div class="notification">
                 <a class="navbar-brand border-end pe-3" href="#">
                     <i class="fa-brands fa-instagram text-dark logo align-self-center"></i>
                 </a>
@@ -113,7 +112,7 @@
                         <div class="card-body">
                             <div class="d-flex">
                                 <div class="flex-grow-1">
-                                    <i class="fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="notification fa-regular fa-heart lead text-dark me-2"></i>
                                     <i class="fa-regular fa-comment lead text-dark me-2"></i>
                                     <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
                                 </div>
@@ -171,7 +170,7 @@
                         <div class="card-body">
                             <div class="d-flex">
                                 <div class="flex-grow-1">
-                                    <i class="fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="notification fa-regular fa-heart lead text-dark me-2"></i>
                                     <i class="fa-regular fa-comment lead text-dark me-2"></i>
                                     <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
                                 </div>
@@ -227,7 +226,7 @@
                         <div class="card-body">
                             <div class="d-flex">
                                 <div class="flex-grow-1">
-                                    <i class="fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="notification fa-regular fa-heart lead text-dark me-2"></i>
                                     <i class="fa-regular fa-comment lead text-dark me-2"></i>
                                     <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
                                 </div>
@@ -408,21 +407,24 @@
     </section>
 
     <script>
-        document.getElementById("logo").addEventListener("click", () => {
+        document.querySelectorAll(".notification").forEach(element => {
+            element.addEventListener("click", () => {
 
-            window.Notification.requestPermission().then((perm) => {
-                if (perm == "granted") {
-                    serviceWorkerRegistration.showNotification("Procesagram", {
-                    body: "En ProcesarGram pronto vendrán cosas nuevas ¡Esperalas!",
-                    icon: "/img/icons/icon-512x512.png",
-                    vibrate: [200, 100, 200, 100, 200, 100, 200],
-                }); 
-                }
+                window.Notification.requestPermission().then((perm) => {
+                    if (perm == "granted") {
+                        serviceWorkerRegistration.showNotification("Procesagram", {
+                            body: "En ProcesarGram pronto vendrán cosas nuevas ¡Esperalas!",
+                            icon: "/img/icons/icon-512x512.png",
+                            vibrate: [200, 100, 200, 100, 200, 100, 200],
+                        });
+                    }
 
-                console.log("%c" + perm, 'color: green; background: yellow; font-size: 14px');
+                    console.log("%c" + perm,
+                        'color: green; background: yellow; font-size: 14px');
 
-            });
-        })
+                });
+            })
+        });
     </script>
 </body>
 
