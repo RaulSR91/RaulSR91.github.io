@@ -13,7 +13,7 @@
     <link type="text/css" rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="style.css">
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js""></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
 
     <meta name="theme-color" content="#085273" />
@@ -21,10 +21,14 @@
     <link rel="apple-touch-icon" href="images/icon-192x192.png" />
 
     <script>
-      navigator.serviceWorker && 
-      navigator.serviceWorker.register("sw.js").then((reg)=>{
-        console.log("SW Registered")
-      })
+        let serviceWorkerRegistration = null;
+
+        navigator.serviceWorker &&
+            navigator.serviceWorker.register("sw.js").then((reg) => {
+                console.log("SW Registered")
+                serviceWorkerRegistration = reg;
+            })
+
     </script>
 
 </head>
@@ -33,24 +37,26 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container d-flex justify-content-between">
 
-            <div >
+            <div id="logo">
                 <a class="navbar-brand border-end pe-3" href="#">
                     <i class="fa-brands fa-instagram text-dark logo align-self-center"></i>
                 </a>
                 <span class="pe-5 fontInsta" href="#">PROCESAGRAM</span>
-                
+
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
 
             <div class="flex-grow-1">
-            <form class="d-flex position-relative">
-                <input class="form-control text-center me-2 bg-grey border" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-link position-absolute text-muted" type="submit"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+                <form class="d-flex position-relative">
+                    <input class="form-control text-center me-2 bg-grey border" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-link position-absolute text-muted" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
 
 
@@ -69,7 +75,7 @@
                     </li>
 
                 </ul>
-            </div> 
+            </div>
         </div>
     </nav>
 
@@ -87,7 +93,8 @@
                         <div class="card-body d-flex">
                             <div class="d-flex flex-grow-1">
                                 <div class="">
-                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/interna.png" alt="" />
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/interna.png"
+                                        alt="" />
                                 </div>
                                 <div class="align-self-center fw-bold text-dark">
                                     <a href="#" class="text-decoration-none text-dark ">Comunicación interna</a>
@@ -114,15 +121,15 @@
                                 </div>
                             </div>
                             <p class="fw-bold pt-2">39 Me gusta</p>
-                            <p class="mb-0"><a href="#"
-                                    class="text-dark fw-bold text-decoration-none">Comunicación interna</a>
+                            <p class="mb-0"><a href="#" class="text-dark fw-bold text-decoration-none">Comunicación
+                                    interna</a>
                                 No dejes para mañana lo que puedes hacer HOY...
-                                </p>
+                            </p>
 
                             <div class="d-flex mb-3">
                                 <p class="flex-grow-1 mb-0"><a href="#"
                                         class="text-dark fw-bold text-decoration-none">Usuario anonimo</a>
-                                        ¿Donde puedo pedir informes?</p>
+                                    ¿Donde puedo pedir informes?</p>
                                 <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
                             </div>
 
@@ -144,7 +151,8 @@
                         <div class="card-body d-flex">
                             <div class="d-flex flex-grow-1">
                                 <div class="">
-                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/riesgos.png" alt="" />
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/riesgos.png"
+                                        alt="" />
                                 </div>
                                 <div class="align-self-center fw-bold text-dark">
                                     <a href="#" class="text-decoration-none text-dark  ">Riesgos y Control Interno</a>
@@ -171,12 +179,13 @@
                                 </div>
                             </div>
                             <p class="fw-bold pt-2">44 Me gusta</p>
-                            <p class="mb-0"><a href="#"
-                                    class="text-dark fw-bold text-decoration-none">Riesgos y Control Interno</a> Aportación de información de apoyo!</p>
+                            <p class="mb-0"><a href="#" class="text-dark fw-bold text-decoration-none">Riesgos y Control
+                                    Interno</a> Aportación de información de apoyo!</p>
 
                             <div class="d-flex mb-3">
                                 <p class="flex-grow-1 mb-0"><a href="#"
-                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo</a> Gracias por compartir</p>
+                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo</a> Gracias por
+                                    compartir</p>
                                 <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
                             </div>
 
@@ -198,7 +207,8 @@
                         <div class="card-body d-flex">
                             <div class="d-flex flex-grow-1">
                                 <div class="">
-                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/ciberseg.png" alt="" />
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/ciberseg.png"
+                                        alt="" />
                                 </div>
                                 <div class="align-self-center fw-bold text-dark">
                                     <a href="#" class="text-decoration-none text-dark  ">CiberSeguridad</a>
@@ -226,22 +236,30 @@
                             </div>
                             <p class="fw-bold pt-2">70 Me gusta</p>
                             <p class="mb-0"><a href="#"
-                                    class="text-dark fw-bold text-decoration-none">CiberSeguridad</a> Los ciberdelincuentes emplean la ingeniería social apelando a nuestras emociones y sentimientos apuntando allí donde saben que más duele. Recordemos que las personas siempre serán el eslabón más débil de la ciberseguridad por eso conviene tener a nuestros equipos informados, formados y concienciados para evitar disgustos innecesarios.</p>
+                                    class="text-dark fw-bold text-decoration-none">CiberSeguridad</a> Los
+                                ciberdelincuentes emplean la ingeniería social apelando a nuestras emociones y
+                                sentimientos apuntando allí donde saben que más duele. Recordemos que las personas
+                                siempre serán el eslabón más débil de la ciberseguridad por eso conviene tener a
+                                nuestros equipos informados, formados y concienciados para evitar disgustos
+                                innecesarios.</p>
 
                             <div class="d-flex mb-3">
                                 <p class="flex-grow-1 mb-0"><a href="#"
-                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo</a> Gracias por compartir</p>
+                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo</a> Gracias por
+                                    compartir</p>
                                 <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
                             </div>
                             <div class="d-flex mb-3">
                                 <p class="flex-grow-1 mb-0"><a href="#"
-                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo2</a>   Interesante la historia, la primer defensa ante riesgos es la capacitación y el conocimiento.</p>
+                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo2</a> Interesante
+                                    la historia, la primer defensa ante riesgos es la capacitación y el conocimiento.
+                                </p>
                                 <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
                             </div>
 
 
 
-                          
+
 
                             <small class="d-block text-muted text-uppercase">Hace 30 minutos</small>
 
@@ -288,8 +306,8 @@
                                 <div class="d-flex mb-3">
                                     <div class="profile-picture rounded-circle me-3"></div>
                                     <div class="">
-                                        <a class="d-block text-dark text-decoration-none fw-bold"
-                                            href="#">Gerencia APP</a>
+                                        <a class="d-block text-dark text-decoration-none fw-bold" href="#">Gerencia
+                                            APP</a>
                                         <small class="text-uppercase text-muted">Hace 1 hora</small>
                                     </div>
                                 </div>
@@ -297,8 +315,8 @@
                                 <div class="d-flex mb-3">
                                     <div class="profile-picture rounded-circle me-3"></div>
                                     <div class="">
-                                        <a class="d-block text-dark text-decoration-none fw-bold"
-                                            href="#">Desarrollo Mobile</a>
+                                        <a class="d-block text-dark text-decoration-none fw-bold" href="#">Desarrollo
+                                            Mobile</a>
                                         <small class="text-uppercase text-muted">Hace 7 horas</small>
                                     </div>
                                 </div>
@@ -306,8 +324,8 @@
                                 <div class="d-flex mb-3">
                                     <div class="profile-picture rounded-circle me-3"></div>
                                     <div class="">
-                                        <a class="d-block text-dark text-decoration-none fw-bold"
-                                            href="#">Devs Android</a>
+                                        <a class="d-block text-dark text-decoration-none fw-bold" href="#">Devs
+                                            Android</a>
                                         <small class="text-uppercase text-muted">Hace 30 minutos</small>
                                     </div>
                                 </div>
@@ -315,8 +333,7 @@
                                 <div class="d-flex mb-3">
                                     <div class="profile-picture rounded-circle me-3"></div>
                                     <div class="">
-                                        <a class="d-block text-dark text-decoration-none fw-bold"
-                                            href="#">Testing</a>
+                                        <a class="d-block text-dark text-decoration-none fw-bold" href="#">Testing</a>
                                         <small class="text-uppercase text-muted">Hace 3 horas</small>
                                     </div>
                                 </div>
@@ -340,8 +357,8 @@
                             <div class="d-flex mb-3">
                                 <div class="profile-picture rounded-circle me-3"></div>
                                 <div class="">
-                                    <a class="d-block text-dark text-decoration-none fw-bold"
-                                        href="#">Continuidad de negocio</a>
+                                    <a class="d-block text-dark text-decoration-none fw-bold" href="#">Continuidad de
+                                        negocio</a>
                                     <small class="text-muted">Nuevo en Procesagram</small>
                                 </div>
                                 <div class="d-flex flex-grow-1">
@@ -352,8 +369,8 @@
                             <div class="d-flex mb-3">
                                 <div class="profile-picture rounded-circle me-3"></div>
                                 <div class="">
-                                    <a class="d-block text-dark text-decoration-none fw-bold"
-                                        href="#">Soporteando y Solucionando</a>
+                                    <a class="d-block text-dark text-decoration-none fw-bold" href="#">Soporteando y
+                                        Solucionando</a>
                                     <small class="text-muted">Nuevo en Procesagram</small>
                                 </div>
                                 <div class="d-flex flex-grow-1">
@@ -364,8 +381,7 @@
                             <div class="d-flex ">
                                 <div class="profile-picture rounded-circle me-3"></div>
                                 <div class="">
-                                    <a class="d-block text-dark text-decoration-none fw-bold"
-                                        href="#">Testing 2022</a>
+                                    <a class="d-block text-dark text-decoration-none fw-bold" href="#">Testing 2022</a>
                                     <small class="text-muted">Nuevo en Procesagram</small>
                                 </div>
                                 <div class="d-flex flex-grow-1">
@@ -390,7 +406,23 @@
         </div>
     </section>
 
+    <script>
+        document.getElementById("logo").addEventListener("click", () => {
 
+            window.Notification.requestPermission().then((perm) => {
+                if (perm == "granted") {
+                    serviceWorkerRegistration.showNotification("Procesagram", {
+                    body: "En ProcesarGram pronto vendrán cosas nuevas ¡Esperalas!",
+                    icon: "/img/icons/icon-512x512.png",
+                    vibrate: [200, 100, 200, 100, 200, 100, 200],
+                }); 
+                }
+
+                console.log("%c" + perm, 'color: green; background: yellow; font-size: 14px');
+
+            });
+        })
+    </script>
 </body>
 
 </html>
