@@ -13,12 +13,12 @@
     <link type="text/css" rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="style.css">
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js""></script>
+
 
     <meta name="theme-color" content="#085273" />
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="images/icon-192x192.png" />
-
-    
 
     <script>
       navigator.serviceWorker && 
@@ -33,22 +33,28 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container d-flex justify-content-between">
 
-            <div>
+            <div >
                 <a class="navbar-brand border-end pe-3" href="#">
                     <i class="fa-brands fa-instagram text-dark logo align-self-center"></i>
                 </a>
-                <span class="pe-4 fontInsta" href="#">PROCESAGRAM</span>
+                <span class="pe-5 fontInsta" href="#">PROCESAGRAM</span>
+                
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <form class="d-flex position-relative align-self-center">
+            <div class="flex-grow-1">
+            <form class="d-flex position-relative">
                 <input class="form-control text-center me-2 bg-grey border" type="search" placeholder="Search"
                     aria-label="Search">
                 <button class="btn btn-link position-absolute text-muted" type="submit"><i
                         class="fa-solid fa-magnifying-glass"></i></button>
             </form>
+            </div>
 
 
-            <div class="collapse navbar-collapse w-auto" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse w-auto flex-grow-1" id="navbarSupportedContent">
                 <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link " href="#"><i class="fa-regular fa-compass lead text-dark me-3"></i></a>
@@ -63,8 +69,7 @@
                     </li>
 
                 </ul>
-
-            </div>
+            </div> 
         </div>
     </nav>
 
