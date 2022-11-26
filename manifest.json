@@ -2,8 +2,8 @@
     "name" : "Procesagram",
     "short_name" : "Procesagram",
     "description" : "Aplicación de ejemplo de pwa",
-    "theme_color": "#35f6d7",
-    "background_color": "#4a90e2",
+    "theme_color": "#085273",
+    "background_color": "#085273",
     "display": "standalone",
     "start_url": "index.html",
     "icons": [
