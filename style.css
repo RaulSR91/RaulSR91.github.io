@@ -1,0 +1,74 @@
+:root {
+  --white: #ffffff;
+  --grey: #fafafa;
+  --blue:#0095f6;
+}
+
+@font-face {
+  font-family: billabong;
+  src: url("fonts/billabong.ttf");
+  font-weight: bold;
+}
+
+.fontInsta {
+  font-family: "billabong";
+  font-size: 2rem;
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-light {
+  background-color: var(--white) !important;
+}
+
+.navbar {
+  min-height: 5rem;
+}
+
+i.lead {
+  font-size: 1.8rem;
+}
+
+i.logo {
+    font-size: 2rem;
+    text-align:center;
+    margin: 0px auto;
+    align-content: center;
+  }
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.py-6{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+a{
+    color: var(--blue);
+}
+
+
+.profile-picture{
+    background-image: url("img/profile/user.jpg");
+    background-size: cover;
+    width:3rem;
+    height:3rem;
+}
+
+.profile-picture-user{
+    background-size: cover;
+
+    width:3rem;
+    height:3rem;
+}
+
+
+.stories-container{
+    height:190px;
+    overflow-y:auto;
+}
+

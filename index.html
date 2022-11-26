@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Procesagram</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <meta name="theme-color" content="#35f6d7" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="images/icon-192x192.png" />
+
+    
+
+    <script>
+      navigator.serviceWorker && 
+      navigator.serviceWorker.register("sw.js").then((reg)=>{
+        console.log("SW Registered")
+      })
+    </script>
+
+</head>
+
+<body class="bg-grey">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container d-flex justify-content-between">
+
+            <div>
+                <a class="navbar-brand border-end pe-3" href="#">
+                    <i class="fa-brands fa-instagram text-dark logo align-self-center"></i>
+                </a>
+                <span class="pe-4 fontInsta" href="#">PROCESAGRAM</span>
+            </div>
+
+            <form class="d-flex position-relative align-self-center">
+                <input class="form-control text-center me-2 bg-grey border" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-link position-absolute text-muted" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+
+            <div class="collapse navbar-collapse w-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa-regular fa-compass lead text-dark me-3"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa-regular fa-heart lead text-dark me-3"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="fa-regular fa-user lead text-dark"></i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="py-1">
+        <div class="container my-4">
+            <div class="row">
+
+
+                <div class="col-lg-8">
+
+                    <!--CARD-->
+
+                    <div class="card mb-3">
+                        <div class="card-body d-flex">
+                            <div class="d-flex flex-grow-1">
+                                <div class="">
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/interna.png" alt="" />
+                                </div>
+                                <div class="align-self-center fw-bold text-dark">
+                                    <a href="#" class="text-decoration-none text-dark ">Comunicación interna</a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-self-center">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+
+                        </div>
+                        <img src="img/ahorro.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <i class="fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-comment lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
+                                </div>
+                                <div class="">
+                                    <i class="fa-regular fa-bookmark lead text-dark me-2"></i>
+                                </div>
+                            </div>
+                            <p class="fw-bold pt-2">39 Me gusta</p>
+                            <p class="mb-0"><a href="#"
+                                    class="text-dark fw-bold text-decoration-none">Comunicación interna</a>
+                                No dejes para mañana lo que puedes hacer HOY...
+                                </p>
+
+                            <div class="d-flex mb-3">
+                                <p class="flex-grow-1 mb-0"><a href="#"
+                                        class="text-dark fw-bold text-decoration-none">Usuario anonimo</a>
+                                        ¿Donde puedo pedir informes?</p>
+                                <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
+                            </div>
+
+                            <small class="d-block text-muted text-uppercase">Hace 8 horas</small>
+
+                        </div>
+
+                        <div class="d-flex border-top py-3 px-2">
+                            <input type="text" class="form-control border-0" placeholder="Agrega un comentario">
+                            <button type="submit" class="btn btn-link fw-bold text-decoration-none"> Publicar</button>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-body d-flex">
+                            <div class="d-flex flex-grow-1">
+                                <div class="">
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/riesgos.png" alt="" />
+                                </div>
+                                <div class="align-self-center fw-bold text-dark">
+                                    <a href="#" class="text-decoration-none text-dark  ">Riesgos y Control Interno</a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-self-center">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+
+                        </div>
+                        <img src="img/riesgos.jpg" class="img-fluid">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <i class="fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-comment lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
+                                </div>
+                                <div class="">
+                                    <i class="fa-regular fa-bookmark lead text-dark me-2"></i>
+                                </div>
+                            </div>
+                            <p class="fw-bold pt-2">44 Me gusta</p>
+                            <p class="mb-0"><a href="#"
+                                    class="text-dark fw-bold text-decoration-none">Riesgos y Control Interno</a> Aportación de información de apoyo!</p>
+
+                            <div class="d-flex mb-3">
+                                <p class="flex-grow-1 mb-0"><a href="#"
+                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo</a> Gracias por compartir</p>
+                                <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
+                            </div>
+
+                            <small class="d-block text-muted text-uppercase">Hace 30 minutos</small>
+
+                        </div>
+
+                        <div class="d-flex border-top py-3 px-2">
+                            <input type="text" class="form-control border-0" placeholder="Agrega un comentario">
+                            <button type="submit" class="btn btn-link fw-bold text-decoration-none"> Publicar</button>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-body d-flex">
+                            <div class="d-flex flex-grow-1">
+                                <div class="">
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/ciberseg.png" alt="" />
+                                </div>
+                                <div class="align-self-center fw-bold text-dark">
+                                    <a href="#" class="text-decoration-none text-dark  ">CiberSeguridad</a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-self-center">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+
+                        </div>
+                        <img src="img/seguridad.png" class="img-fluid">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <i class="fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-comment lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
+                                </div>
+                                <div class="">
+                                    <i class="fa-regular fa-bookmark lead text-dark me-2"></i>
+                                </div>
+                            </div>
+                            <p class="fw-bold pt-2">70 Me gusta</p>
+                            <p class="mb-0"><a href="#"
+                                    class="text-dark fw-bold text-decoration-none">CiberSeguridad</a> Los ciberdelincuentes emplean la ingeniería social apelando a nuestras emociones y sentimientos apuntando allí donde saben que más duele. Recordemos que las personas siempre serán el eslabón más débil de la ciberseguridad por eso conviene tener a nuestros equipos informados, formados y concienciados para evitar disgustos innecesarios.</p>
+
+                            <div class="d-flex mb-3">
+                                <p class="flex-grow-1 mb-0"><a href="#"
+                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo</a> Gracias por compartir</p>
+                                <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <p class="flex-grow-1 mb-0"><a href="#"
+                                        class="text-dark fw-bold text-decoration-none">Usuario anónimo2</a>   Interesante la historia, la primer defensa ante riesgos es la capacitación y el conocimiento.</p>
+                                <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
+                            </div>
+
+
+
+                          
+
+                            <small class="d-block text-muted text-uppercase">Hace 30 minutos</small>
+
+                        </div>
+
+                        <div class="d-flex border-top py-3 px-2">
+                            <input type="text" class="form-control border-0" placeholder="Agrega un comentario">
+                            <button type="submit" class="btn btn-link fw-bold text-decoration-none"> Publicar</button>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <!--CARD-->
+
+
+
+
+
+                <div class="col-lg-4">
+                    <div class="d-flex mb-4">
+                        <div class="">
+                            <img src="img/profile/rsalazar.jpg" class="profile-picture-user rounded-circle me-3">
+                        </div>
+                        <div>
+                            <a href="#" class="d-block text-dark text-decoration-none fw-bold mb-0">RSALAZAR</a>
+                            <small class="text-muted">Raúl Salazar Romero</small>
+                        </div>
+                    </div>
+
+                    <!--STORIES-->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <p class="text-muted fw-bold flex-grow-1">Stories</p>
+                                <small class="fw-bold"><a href="#" class="text-decoration-none text-dark">Ver
+                                        todas</a></small>
+                            </div>
+
+                            <div class="stories-container">
+
+                                <div class="d-flex mb-3">
+                                    <div class="profile-picture rounded-circle me-3"></div>
+                                    <div class="">
+                                        <a class="d-block text-dark text-decoration-none fw-bold"
+                                            href="#">Gerencia APP</a>
+                                        <small class="text-uppercase text-muted">Hace 1 hora</small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <div class="profile-picture rounded-circle me-3"></div>
+                                    <div class="">
+                                        <a class="d-block text-dark text-decoration-none fw-bold"
+                                            href="#">Desarrollo Mobile</a>
+                                        <small class="text-uppercase text-muted">Hace 7 horas</small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <div class="profile-picture rounded-circle me-3"></div>
+                                    <div class="">
+                                        <a class="d-block text-dark text-decoration-none fw-bold"
+                                            href="#">Devs Android</a>
+                                        <small class="text-uppercase text-muted">Hace 30 minutos</small>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-3">
+                                    <div class="profile-picture rounded-circle me-3"></div>
+                                    <div class="">
+                                        <a class="d-block text-dark text-decoration-none fw-bold"
+                                            href="#">Testing</a>
+                                        <small class="text-uppercase text-muted">Hace 3 horas</small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!---STORIES -->
+
+
+                    <!--suggestions-->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <p class="text-muted fw-bold flex-grow-1">Sugerencias para ti</p>
+                                <small class="fw-bold"><a href="#" class="text-decoration-none text-dark">Ver
+                                        todo</a></small>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <div class="profile-picture rounded-circle me-3"></div>
+                                <div class="">
+                                    <a class="d-block text-dark text-decoration-none fw-bold"
+                                        href="#">Continuidad de negocio</a>
+                                    <small class="text-muted">Nuevo en Procesagram</small>
+                                </div>
+                                <div class="d-flex flex-grow-1">
+                                    <a href="#" class="ms-auto fw-bold text-decoration-none">Seguir</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <div class="profile-picture rounded-circle me-3"></div>
+                                <div class="">
+                                    <a class="d-block text-dark text-decoration-none fw-bold"
+                                        href="#">Soporteando y Solucionando</a>
+                                    <small class="text-muted">Nuevo en Procesagram</small>
+                                </div>
+                                <div class="d-flex flex-grow-1">
+                                    <a href="#" class="ms-auto fw-bold text-decoration-none">Seguir</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex ">
+                                <div class="profile-picture rounded-circle me-3"></div>
+                                <div class="">
+                                    <a class="d-block text-dark text-decoration-none fw-bold"
+                                        href="#">Testing 2022</a>
+                                    <small class="text-muted">Nuevo en Procesagram</small>
+                                </div>
+                                <div class="d-flex flex-grow-1">
+                                    <a href="#" class="ms-auto fw-bold text-decoration-none">Seguir</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!--suggestions-->
+
+
+                    <small class="text-muted">©2022 PROCESAGRAM FROM PROCESAR</small>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
