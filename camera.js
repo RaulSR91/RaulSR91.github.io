@@ -58,10 +58,15 @@ capture.addEventListener('click', () => {
                 canvas.width = imgwidth;
                 canvas.height = imgheight;
 
+                context.webkitImageSmoothingEnabled = false;
+                context.mozImageSmoothingEnabled = false;
+                context.imageSmoothingEnabled = false;
+
+
                 context.drawImage(img, 0, 0, imgwidth, imgheight);
                 //  URL.revokeObjectURL(img.src);
                 viewStatusCamera(STATUS_CAMERA.CAPTURE);
-                const fullQuality = canvas.toDataURLHD('image/jpeg', 1.0);
+                const fullQuality = canvas.toDataURL('image/jpeg', 1.0);
                 profilePicture =   fullQuality;
                 stopCamera();
             };
