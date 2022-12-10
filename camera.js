@@ -8,6 +8,7 @@ const useImg = document.getElementById('useImg');
 
 const player = document.getElementById('player');
 const canvas = document.getElementById('canvas');
+canvas.height = canvas.width = 0;
 const context = canvas.getContext('2d');
 
 
@@ -36,6 +37,7 @@ stopBtn.addEventListener('click', () => {
 
 useImg.addEventListener('click', () => {
     playImg.src = profilePicture;
+    URL.revokeObjectURL(playImg.src);
     viewStatusCamera(STATUS_CAMERA.USE);
     stopCamera();
 
@@ -50,10 +52,16 @@ capture.addEventListener('click', () => {
             img.src = URL.createObjectURL(blob);
 
             img.onload = () => {
-                context.drawImage(img, 0, 0, canvas.width, canvas.height);
-                profilePicture = img.src;
+
+                var imgwidth = player.offsetWidth;
+                var imgheight = player.offsetHeight;
+                canvas.width = imgwidth;
+                canvas.height = imgheight;
+
+                context.drawImage(img, 0, 0, imgwidth, imgheight);
                 //  URL.revokeObjectURL(img.src);
                 viewStatusCamera(STATUS_CAMERA.CAPTURE);
+                profilePicture = img.src;
                 stopCamera();
             };
         });

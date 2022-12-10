@@ -294,33 +294,46 @@
                         </div>
                     </div>
 
-                    <div class="card mb-4" id = "divCaptureProfilePicture" style="display: none">
-                        <div class="card-body  ">
+                    <div class="card mb-4" id="divCaptureProfilePicture" style="display: none">
+                        <div class="card-body ">
 
                             <div class="d-flex mb-4">
-                            <button id="playBtn" type="button" class="btn btn-outline-info btn-sm">Recapturar</button>
-                            <button id="captureBtn" type="button" class="btn btn-outline-success btn-sm">Capturar</button>
-                            <button id="stopBtn" type="button" class="btn btn-outline-danger btn-sm">Cancelar</button>
-                            <button id="useImg" type="button" class="btn btn-outline-success btn-sm">Usar como foto de perfil</button>
+                                <button id="playBtn" type="button"
+                                    class="btn btn-outline-info btn-sm">Recapturar</button>
+                                <button id="captureBtn" type="button"
+                                    class="btn btn-outline-success btn-sm">Capturar</button>
+                                <button id="stopBtn" type="button"
+                                    class="btn btn-outline-danger btn-sm">Cancelar</button>
+                                <button id="useImg" type="button" class="btn btn-outline-success btn-sm">Usar como foto
+                                    de perfil</button>
                             </div>
-                            <video id="player" style="width: 100%;height: 100%;display: none" autoplay></video>
-                            <canvas id="canvas" style="width: 100%;height: 100%;display: none" />
+
+
+                           
+                            <div class="d-flex mb-4"> 
+                                <video id="player" style="width: 100%;height: 10%;" autoplay></video>
+                                <canvas class="mb-4" id="canvas" style="width: 100%;height: 100%; display: none;" />
+                           
+                            </div>
+
 
 
 
 
                             <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                                <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                                  <div class="toast-header">
-                                    <strong class="me-auto">Bootstrap</strong>
-                                    <small>11 mins ago</small>
-                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                  </div>
-                                  <div class="toast-body">
-                                    Hello, world! This is a toast message.
-                                  </div>
+                                <div id="liveToast" class="toast hide" role="alert" aria-live="assertive"
+                                    aria-atomic="true">
+                                    <div class="toast-header">
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Hello, world! This is a toast message.
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
 
 
                         </div>
@@ -382,7 +395,7 @@
 
 
                     <!--suggestions-->
-                    <div class="card mb-4">
+                    <div class="card mb-4 mt-4">
                         <div class="card-body">
                             <div class="d-flex">
                                 <p class="text-muted fw-bold flex-grow-1">Sugerencias para ti</p>
