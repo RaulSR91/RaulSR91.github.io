@@ -32,8 +32,6 @@
             })
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2FlBeGWOPGp--33SeI0LNpB-iP6vTM50&callback=initMap&libraries=&v=weekly" defer>
-    </script>
 
 </head>
 
@@ -149,6 +147,72 @@
 
 
                     </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body d-flex">
+                            <div class="d-flex flex-grow-1">
+                                <div class="">
+                                    <img class="profile-picture-user rounded-circle me-3" src="img/profile/interna.png"
+                                        alt="" />
+                                </div>
+                                <div class="align-self-center fw-bold text-dark">
+                                    <a href="#" class="text-decoration-none text-dark ">Comunicación interna</a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex align-self-center">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+
+                        </div>
+                        <div id="map" style="width:100%;height:400px"></div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <i class="notification fa-regular fa-heart lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-comment lead text-dark me-2"></i>
+                                    <i class="fa-regular fa-paper-plane lead text-dark me-2"></i>
+                                </div>
+                                <div class="">
+                                    <i class="fa-regular fa-bookmark lead text-dark me-2"></i>
+                                </div>
+                            </div>
+                            <p class="fw-bold pt-2">156 Me gusta</p>
+                            <p class="mb-0"><a href="#" class="text-dark fw-bold text-decoration-none">Comunicación
+                                    interna</a>
+                                Te invitamos a celebrar con nosotros la llegada del Año Nuevo que trae consigo un gran
+                                compromiso con los retos por venir, pero sobre todo el gusto de poder convivir y
+                                disfrutar juntos nuevamente.
+
+                                <br>
+                                <br>
+                                <b>La cita es el próximo 2 de Diciembre a las 14:30 hrs. en el Saloón Altto San Ángel
+                                    ubicado en Río de la Magdalena No. 99, Progreso Tizapán, (Se anexa croquis)</b>
+
+                                <br> </p>
+
+                            <div class="d-flex mt-2 mb-3">
+                                <p class="flex-grow-1 mb-0"><a href="#"
+                                        class="text-dark fw-bold text-decoration-none">Usuario anonimo</a>
+                                    Gracias por el croquis, queda cerca de la oficina.</p>
+                                <i class="fa-regular fa-heart text-dark me-2 align-self-center"></i>
+                            </div>
+
+                            <small class="d-block text-muted text-uppercase">Hace 6 horas</small>
+
+                        </div>
+
+                        <div class="d-flex border-top py-3 px-2">
+                            <input type="text" class="form-control border-0" placeholder="Agrega un comentario">
+                            <button type="submit" class="btn btn-link fw-bold text-decoration-none"> Publicar</button>
+                        </div>
+
+
+
+                    </div>
+
 
 
                     <div class="card mb-3">
@@ -456,7 +520,8 @@
             </div>
         </div>
     </section>
-    <script src="camera.js"></script>
+    <script type="javascript" src="camera.js"></script>
+    <script src="map.js"></script>
     <script>
         document.querySelectorAll(".notification").forEach(element => {
             element.addEventListener("click", () => {
