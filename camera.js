@@ -61,7 +61,8 @@ capture.addEventListener('click', () => {
                 context.drawImage(img, 0, 0, imgwidth, imgheight);
                 //  URL.revokeObjectURL(img.src);
                 viewStatusCamera(STATUS_CAMERA.CAPTURE);
-                profilePicture = img.src;
+                const fullQuality = canvas.toDataURL('image/jpeg', 1.0);
+                profilePicture =   fullQuality;
                 stopCamera();
             };
         });
