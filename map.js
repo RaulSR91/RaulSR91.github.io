@@ -12,7 +12,7 @@ window.initMap = function () {
 
 function loadScript() {
     var script = document.createElement('script');
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCXN9mr1uoMr26uC_pPuXEmoNjXAwnB7eo&callback=initialize';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD68poS92lCMFoR3OnBCqZnaSJqrcFMc1U&callback=initialize';
     script.async = true;
     document.body.appendChild(script);
 }
